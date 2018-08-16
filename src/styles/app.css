@@ -1,0 +1,31 @@
+.dashboard-container {
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+.main-title {
+    font-family: 'Aerial';
+    border: 2px grey solid;
+
+}
+
+
+/* Todo List Style */
+
+.todo-list-container {
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    border: 2px grey solid;
+}
+
+.todo-item-container {
+    border: 2px grey solid;
+}
+
+.todo-completed{
+    background-color: green;
+}
+
+

@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import {compose} from 'recompose'
 
 import TodoForm from '../todo-form'
-
+import TodoList from '../todo-list'
 
 class DashboardContainer extends React.Component{
   constructor(props){
@@ -15,6 +15,7 @@ class DashboardContainer extends React.Component{
       <div className='dashboard-container'>
         <h1 className='main-title'>To-Do</h1>
         <TodoForm/>
+        <TodoList/>
       </div>
     )
   }
