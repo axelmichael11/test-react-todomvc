@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import {compose} from 'recompose'
 
-
+import TodoForm from '../todo-form'
 
 
 class DashboardContainer extends React.Component{
@@ -14,7 +14,7 @@ class DashboardContainer extends React.Component{
     return (
       <div className='dashboard-container'>
         <h1 className='main-title'>To-Do</h1>
-        
+        <TodoForm/>
       </div>
     )
   }
@@ -22,7 +22,7 @@ class DashboardContainer extends React.Component{
 
 
 export const mapStateToProps = state => ({
-  
+  todoList: state.todoList,
 })
 
 export const mapDispatchToProps = dispatch => ({
