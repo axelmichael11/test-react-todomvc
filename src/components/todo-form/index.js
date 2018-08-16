@@ -46,9 +46,8 @@ class TodoForm extends React.Component {
       />
      <button
       className='todo-submit'
-      label='+'
       onClick={this.handleSubmit}
-    />
+    > + </button>
   </form>
   </div>
     )
