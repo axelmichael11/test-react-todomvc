@@ -26,7 +26,6 @@ let plugins = [
 ]
 
 
-console.log('this is our production thing!!!!', process.env.NODE_ENV);
 
 
 module.exports = {

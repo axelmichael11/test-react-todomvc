@@ -11,30 +11,38 @@ const TodoItemCount = ({})
 
 
 const TodoItem = ({...props}) => {
-    console.log('props on todo item!', props.hover, props.hoverkey)
     return (
-        <div 
-        className='todo-item-container'
-        onMouseEnter={props.handleMouseEnter}
-        onMouseLeave={props.handleMouseLeave}>
-            <li className={props.todo.completed ? 'todo-completed' :'todo-not-completed'}>
-                <h1 className='todo-title'>Task {props.todoNumber}</h1>
-                <p className='todo-message'>{props.todo.todoMessage}</p>
+        <div>
+            <li
+            onMouseEnter={props.handleMouseEnter}
+            onMouseLeave={props.handleMouseLeave}
+            className='todo-item'
+            id={props.todo.completed ? 'todo-completed' :'todo-not-completed'}
+            >
+                <p className='todo-title'>Task {props.todoNumber}</p>
+                <p className='todo-message'>{
+                    (props.hover===props.todoNumber) ? 
+                    props.todo.todoMessage
+                    : props.todo.todoMessage.substring(0,15)}
+                    {(props.todo.todoMessage.length > 15)  &&
+                         !(props.hover===props.todoNumber)? 
+                         '...': null}
+                    </p>
+                <div className='todo-buttons-container'>
                 <button
-                className='todo-item-checkbox'
-                label='X'
+                className='todo-item-button'
                 onClick={props.handleTodoComplete}
                 >
-                {props.todo.completed? 'Complete': 'X'}
+                {props.todo.completed ? '✓': 'X'}
                 </button>
-                {
-                    (props.hover===props.todoNumber)?(<button
-                                            onClick={props.handleTodoDelete}
-                                            >
-                                            Delete Todo item
-                                            </button>
-                                    ): null
-                    }
+                {(props.hover===props.todoNumber)?
+                    (
+                    <button
+                    className='todo-item-button'
+                        onClick={props.handleTodoDelete}>Delete</button>
+                    ): null}
+                <div style={{"clear":"both"}}></div>
+                </div>
             </li>
         </div>
     )
@@ -71,7 +79,6 @@ class TodoList extends React.Component{
     }
 
     handleTodoComplete(i){
-        console.log('hitting handle todo complete', i)
         this.props.changeTodoComplete(i);
     }
     handleTodoDelete(i){
@@ -106,7 +113,6 @@ class TodoList extends React.Component{
     }
 
     renderList(){
-        console.log('TODO LIST', this.props, this.state)
         
         return (
             <div className='todo-list-container'>

@@ -13,7 +13,7 @@ class DashboardContainer extends React.Component{
   render(){
     return (
       <div className='dashboard-container'>
-        <h1 className='main-title'>To-Do</h1>
+        <h3 className='main-title'>To-Do</h3>
         <TodoForm/>
         <TodoList/>
       </div>
