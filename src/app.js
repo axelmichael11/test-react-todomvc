@@ -5,7 +5,7 @@ import {Provider} from 'react-redux'
 
 import {connect} from 'react-redux'
 import DashboardContainer from './components/dashboardcontainer/index.js'
-import storeCreate from './utils/store-create.js'
+import storeCreate from './containers/redux-utils/store-create.js'
 
 
 import './styles/base.css'
