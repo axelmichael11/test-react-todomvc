@@ -1,5 +1,5 @@
 
-import * as util from './util.js'
+import * as util from '../../utils/util.js'
 
 export default store => next => action => {
     util.log('__ACTION__', action)

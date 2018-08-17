@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import {addTodoItem} from '../../actions/todo-actions'
+import {addTodoItem} from '../../containers/actions/todo-actions'
 import {compose} from 'recompose'
 
 
@@ -45,7 +45,8 @@ class TodoForm extends React.Component {
         value={this.state.todoMessage}
       />
      <button
-      className='todo-submit'
+     type='submit'
+      className='todo-submit-button'
       onClick={this.handleSubmit}
     > + </button>
   </form>

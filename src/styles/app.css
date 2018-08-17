@@ -1,0 +1,98 @@
+.dashboard-container {
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+.main-title {
+    border: 2px grey solid;
+    padding: 5px;
+}
+
+
+
+/* Todo Form Style */
+.todo-form {
+    margin-bottom: 3em;
+}
+
+
+/* Todo List Style */
+
+.todo-list-container {
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    border: 2px grey solid;
+}
+
+
+
+/* Todo Item Style */
+
+.todo-item {
+    border: 2px grey solid;
+    margin-bottom: 10px;
+    text-align: left;
+    visibility: hidden;
+}
+
+.todo-item {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.todo-text-container{
+
+    display: inline-block;
+}
+
+.todo-title {
+    
+    display:inline-block;
+    vertical-align:top;
+    margin:0 0 0 15%;
+    padding:3% 0;
+    max-width: 20%;
+}
+
+.todo-message {
+    display:inline-block;
+    word-break: break-all;
+    vertical-align:top;
+    margin:0;
+    padding:3% 0;
+    margin-left: 2%;
+    max-width: 38%;
+
+}
+
+/* Todo buttons Style */
+
+
+.todo-buttons-container{
+    
+    display: inline;
+    max-width: 40%;
+}
+
+.todo-item-button{
+    border:1px black solid;
+    text-align:center;
+    font-family: 'Helvetica';
+    height: 40px;
+    float: right;
+    width: 5em;
+    font-size: 10px;
+}
+
+#todo-completed{
+    background-color: green;
+}
+
+
+
+
+

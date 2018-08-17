@@ -6,9 +6,7 @@ const { DefinePlugin, EnvironmentPlugin } = require('webpack')
 const webpack = require('webpack')
 const HTMLPlugin = require('html-webpack-plugin')
 const CleanPlugin = require('clean-webpack-plugin')
-const UglifyPlugin = require('uglifyjs-webpack-plugin')
 const ExtractPlugin = require('extract-text-webpack-plugin')
-const CompressionPlugin = require('compression-webpack-plugin');
 const path = require('path');
 
 
@@ -26,7 +24,6 @@ let plugins = [
 ]
 
 
-console.log('this is our production thing!!!!', process.env.NODE_ENV);
 
 
 module.exports = {
