@@ -2,7 +2,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import {  compose, branch, renderComponent} from 'recompose'
-import {changeTodoComplete, deleteTodo} from '../../actions/todo-actions'
+import {changeTodoComplete, deleteTodo} from '../../containers/actions/todo-actions'
 
 
 

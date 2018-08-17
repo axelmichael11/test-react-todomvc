@@ -1,4 +1,4 @@
-import reducer from '../reducers/index'
+import reducer from '../reducers'
 import thunk from './redux-thunk.js'
 import reporter from './redux-reporter.js'
 import { compose, createStore, applyMiddleware } from 'redux'
